@@ -1,0 +1,37 @@
+<dl class="list rel" id="list_D03_30" onmouseout="mouseOutStyle(this)" onmouseover="mouseOverStyle(this)">
+<dt class="img rel floatl">
+<a href="/chushou/3_307485183.htm" target="_blank">
+<img height="135" onerror="imgiserror(this,'http://cdnsfb.soufunimg.com/1/2017_10/27/M21/56/ac9b8d71a0af4fc5b95ff5fa64ea7fa0.jpg')" src="http://img.soufun.com/secondhouse/image/esfnew/search2014/images/loading160_120.gif" src2="http://cdnsfb.soufunimg.com/viewimage/1/2017_10/27/M21/56/ac9b8d71a0af4fc5b95ff5fa64ea7fa0/220x165c.jpg" width="180"/></a>
+</dt>
+<dd class="info rel floatr">
+<p class="title"><a href="/chushou/3_307485183.htm" target="_blank" title="低于市场价格50万,带飘窗,阳光视野全无遮挡,近4/12号线,急售">低于市场价格50万,带飘窗,阳光视野全无遮挡,近4/12号线,急售</a>
+</p>
+<p class="mt12">
+                            2室2厅
+                            
+                            <span class="line">|</span>低层(共14层)
+                            <span class="line">|</span>南北向
+                            <span class="line">|</span>建筑年代：2005
+                        </p>
+<p class="mt10">
+<a href="/house-xm1210070060/" target="_blank" title="丝庐花语"><span>丝庐花语</span></a>
+<span class="iconAdress ml10 gray9" title="斜土路-零陵路29弄1-23号">斜土路-零陵路29弄1-23号</span>
+</p>
+<p class="gray6 mt10"><a href="/a/wyh507880870" rel="nofollow" target="_blank" title="访问[巫焰红]的个人网上店铺，查看更多房源">巫焰红</a><span class="ml10 gray9"></span></p>
+<div class="mt8 clearfix">
+<div class="pt4 floatl">
+<span class="colorPink note">优质教育</span><span class="train note">距4号线大木桥路站约402米</span>
+</div>
+<div class="floatl note-img"></div>
+</div>
+<div class="area alignR">
+<p>104�O</p>
+<p class="tag">建筑面积</p>
+</div>
+<div class="moreInfo">
+<p class="mt5 alignR"><span class="price">745</span><span class="YaHei ml5">万</span></p>
+<p class="danjia alignR mt5">71877元<span class="Arial">/</span>�O</p>
+</div>
+</dd>
+<div class="clear"></div>
+</dl>
