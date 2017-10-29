@@ -55,40 +55,52 @@ f.close()
 
 
 soup =BeautifulSoup(html,'lxml')
-
+#总价
 total = soup.find('div',class_ = 'trl-item sty1').i.text
 
+# 标签
 a = soup.find('div',class_ = 'bqian clearfix')
     
 q = []
 for item in a.find_all('span'):
     q.append(item.text)
 
+
+#基本信息
 detail = soup.find_all('div',class_ = 'trl-item1')
 
 d = []
 for item in detail:
-    d.append(item.div.text)
+    for c in item.find_all('div'):
+        d.append(c.text.replace('\r\n',''))
+values1 = d[::2]
+keys1 = d[1::2]
+dic1 = dict(zip(keys1, values1))
 
+#小区
 community = soup.find('a',id =  'agantesfxq_C03_05').text
-
+#区县
 district  = soup.find('a',id =  'agantesfxq_C03_07').text
-
+#街道
 subdistrict  = soup.find('a',id =  'agantesfxq_C03_08').text
-
+#对口学校
 school  = soup.find('a',id =  'agantesfxq_C03_09').text
-                   
+#中介                  
 agent  =  soup.find('a',id =  'agantesfxq_C04_02').text              
-
+#中介 电话
 phone  =  soup.find('span',id = 'mobilecode').text    
 
-                   
+#房源信息                 
 house_detail = soup.find('div',class_ = 'cont clearfix qu_bianqu1').find_all('span')
 
 house_detail_q = []
 for item in house_detail:
     house_detail_q.append(item.text)
+values2 = house_detail_q[1::2]
+keys2 = house_detail_q[::2]
+dic2 = dict(zip(keys2, values2))
 
+#图片
 pic_detail = soup.find('div',class_= 'cont-sty1 clearfix').find_all('img')
 
 pic_detail_q = []
