@@ -149,7 +149,7 @@ cursor = connect_mysql()
 root_url = 'http://esf.sh.fang.com'
 
 for page in range(1,pages+1):
-    print ('开始爬搜索的第%d页'%(page))
+#    print ('开始爬搜索的第%d页'%(page))
     for link in links:
     
         print (root_url+link)
@@ -189,9 +189,10 @@ for page in range(1,pages+1):
             floor_max = int(floor_max_re)
         except :
             floor_max = 'Null'
-    
-        decorate = dic1['装修']
-    
+        try :
+            decorate = dic1['装修']
+        except :
+            decorate = 'Null'
         community =   data['community']  
         district =   data['district']
         subdistrict =   data['subdistrict']  
@@ -216,7 +217,7 @@ for page in range(1,pages+1):
         
         
         if '建筑结构' in dic2.keys():
-            struct = dic2['建筑结构']
+#            struct = dic2['建筑结构']
         
         if '建筑类别' in dic2.keys():
             attr = dic2['建筑类别']
