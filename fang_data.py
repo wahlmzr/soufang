@@ -4,11 +4,17 @@ Created on Sat Oct 28 01:46:03 2017
 
 @author: Administrator
 """
+import sys
+sys.path.append('../..')
 
 import requests
 from bs4 import BeautifulSoup
 import re
 import pymysql
+from common_packet.get_date import getday
+
+today =getday()
+print ('%s 开始爬'%today)
 headers = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Encoding": "gzip, deflate",
@@ -141,7 +147,7 @@ def write_mysql(config):
 
 
 pages , links = get_page_num(start_url)
-print ('一共有%s页'%(pages))
+#print ('一共有%s页'%(pages))
 
 
 cursor = connect_mysql()
@@ -272,6 +278,9 @@ for page in range(1,pages+1):
 
         cursor.execute(sql)
         cursor.execute('commit')
+        cursor.close()
+        
+print ('%s 结束'%today)
         
         
 
@@ -280,5 +289,3 @@ for page in range(1,pages+1):
     
 
 
-
-    
